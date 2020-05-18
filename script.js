@@ -35,11 +35,14 @@ function startMatch() {
 function sameLength() {
    d = parseInt(wordInput.value)
   if (d === a) {
-    message.innerHTML = 'Correct';
+    message.innerHTML = 'WIN';
     return true;
-  } else {
+  } else if (d !== a) {
     message.innerHTML = ' Try again';
     return false;
+  }
+  else {
+    message.innerHTML = ' Lose';
   }
 }
 function showWord(words) {
@@ -47,6 +50,7 @@ function showWord(words) {
   currentWord.innerHTML = words[randIndex];
    a = words[randIndex].length;
 }
+//test
 function countdown() {
   if (time > 0) {
     time--;
@@ -57,6 +61,6 @@ function countdown() {
 }
 function checkStatus() {
   if (!isPlaying && time === 0) {
-    message.innerHTML = 'Game Over';
+    message.innerHTML = 'LOSE';
   }
 }
