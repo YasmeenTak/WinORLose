@@ -37,12 +37,9 @@ function sameLength() {
   if (d === a) {
     message.innerHTML = 'WIN';
     return true;
-  } else if (d !== a) {
+  } else {
     message.innerHTML = ' Try again';
     return false;
-  }
-  else {
-    message.innerHTML = ' Lose';
   }
 }
 function showWord(words) {
@@ -50,7 +47,6 @@ function showWord(words) {
   currentWord.innerHTML = words[randIndex];
    a = words[randIndex].length;
 }
-//test
 function countdown() {
   if (time > 0) {
     time--;
