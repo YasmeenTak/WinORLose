@@ -1,0 +1,59 @@
+
+#header{
+	text-align: center;
+	background-color: #993366;
+	color: white;
+     height: 100px;
+       padding: 20px;
+       font-family: sans-serif;
+}
+ #coun{
+ 	text-align: center;
+	background-color: black;
+	color: white;
+     height: 100px;
+       padding: 20px;
+       font-family: sans-serif;
+}
+.Timer{
+	text-align: center;
+	background-color: black;
+	color: white;
+     height: 100px;
+       padding: 70px;
+       font-family: sans-serif;
+}
+ 
+header h1 {
+    margin: 0;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+#cheack{
+    border: 3px solid #993366;
+    background-color: white;
+    color: black;
+    padding: 3px;
+    border-radius: 5px;
+    font-family: sans-serif;
+    font-weight: bold;
+
+
+}
+
+#word-input{
+    border: 3px solid #993366;
+    background-color: white;
+    color: black;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: sans-serif;
+
+
+}
+
