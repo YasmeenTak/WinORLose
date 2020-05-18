@@ -1,7 +1,6 @@
-window.addEventListener('load', init);
-
-var currentLevel = 10
-var time = 10;
+window.addEventListener('load', start);
+var currentLevel = 15;
+var time = 15;
 var isPlaying;
 var wordInput = document.querySelector('#word-input');
 var click = document.querySelector('#click');
@@ -18,11 +17,8 @@ var words =["Pneumonoultramicroscopicsilicovolcanoconiosis","Pseudopseudohypopar
 "Anas Abdelwahed","Ayman Almanasra","Basma Alafifi",
 "Doaa AbuJayyab","Eman Abu Waked","Fatima Abu Rashed","Israa AbuHarb","Neveen Khozondar",
 "Razan Abu Ikmail","Safaa Safi","Yasmin Hillis","Maha Nbahin ","Tamara Almajali"];
-
-
-
-function init() {
-  seconds.innerHTML = 10;
+function start() {
+  seconds.innerHTML = 15;
   showWord(words);
   click.addEventListener('click', startMatch);
   setInterval(countdown, 1000);
@@ -61,7 +57,6 @@ function countdown() {
 }
 function checkStatus() {
   if (!isPlaying && time === 0) {
-    message.innerHTML = 'Game Over!!!';
+    message.innerHTML = 'Game Over';
   }
 }
-
